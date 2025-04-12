@@ -25,30 +25,38 @@
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 5%;
+    padding-top: clamp(72px, 6.94vw, 100px);
 }
 .subtitle{
     color: #FFFFFF;
     font-size:clamp(16px, 1.944vw, 28px);
     font-weight: bold;
-    padding:0 0 3% 0;
+    padding-bottom: clamp(26px, 3.03vw, 43.71px);
 }
 .summit_logo{
     width: 39.03vw;
-    padding-bottom: 12px;
+    padding-bottom: clamp(11px, 0.97vw, 12px);
 }
 .summit_sub_logo{
     display: none;
 }
 .time_logo{
-    width: 26.5vw;
-    margin-bottom: -1.67%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: italic;
+    
+    font-size: clamp(24px, 2.91vw, 43.73px);
+}
+.sat{
+    font-size: 0.8em;
 }
 .location{
     color: #FFFFFF;
     font-size:clamp(16px, 2.03vw, 29.19px);
     font-weight: bold;
-    padding-bottom: 2.78%;
+    padding-bottom: clamp(24px, 2.91vw, 42px);
 }
 .line_button{
     width: 29.17vw;
@@ -67,11 +75,6 @@
 .side_button_sp_image{
     display: none;
 }
-.section{
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
-}
 .section_1_2{
     background-image: url(../images/Group\ 185.png);
     width: 100%;
@@ -79,21 +82,58 @@
     background-size: cover;
     background-position: center;
 }
+.section_1{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
 .sectiontitle{
-    padding-top: 3.33vh;
-    font-size:clamp(26px, 4.17vw, 60px) ;
+    padding-top: clamp(30px, 2.63vw, 38px);
+    padding-bottom: clamp(10px, 1.11vw, 16px);
+    font-size: clamp(26px, 4.17vw, 60px);
     font-family: "Roboto", sans-serif;
     color: #81D7FC;
     font-style: italic;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: 0%;
 }
 .sectionsub_title{
-    font-size: clamp(12px, 1.25vw, 18px);
+    font-size: clamp(14px, 1.25vw, 18px);
+    color: #444545;
+    font-weight: 700;
+    letter-spacing: 0%;
+    padding-bottom:clamp(30px, 4.17vw, 60px);  /* 60px */
 }
-
-
+.sectionsub_title::before,
+.sectionsub_title::after {
+  content: "";
+  display: inline-block;
+  width: clamp(20px, 2.8vw, 30px);        /* 横棒の長さ */
+  height: 1px;        /* 横棒の太さ */
+  background-color: #444545;
+  vertical-align: 40%;
+  margin-right: clamp(14px, 1.39vw, 21px);
+  margin-left: clamp(8.33px, 0.69vw, 11px);
+}
+.section_1_text{
+    font-size: clamp(18px, 1.52vw, 22px);
+    color: #444545;
+    font-weight: 700;
+    line-height: 45px;
+    padding-bottom: 4%;
+}
+.section_1_description{
+    width: clamp(295px, 66.67vw, 960px);
+    font-size: clamp(16px, 1.25vw, 18px);
+    color: #444545;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    margin: 0 auto;
+}
+.sp_section1_text{
+    display: none;
+}
 @media (max-width: 767px){
     .kv{
         background-image: url(../images/sp/Group\ 184.png);
@@ -107,28 +147,45 @@
         top: 2.81%;
         left: 3.08vw;
     }
-    .subtitle{
-        padding: 19vw 0 6.15vw 0;
-        font-size: 4.1vw;
-    }
     .summit_logo{
         width: 77.44vw;
-        padding-bottom: 2.5vw;
     }
     .summit_sub_logo{
-        display:inline-block;
-        width: 65vw;
-        padding-bottom: 4.1vw;
+        display: flex;
+        justify-content: center; 
+        color: #FFFFFF;
+        font-family: "Roboto", sans-serif;
+        padding-bottom: clamp(11px, 0.97vw, 12px);
     }
-    .time_logo{
-        width: 53vw;
-        margin-bottom: -3%;
+    .summit_sub_text{
+        font-weight: 500;
+        font-style: italic;
+        font-size: clamp(18.9px, 1.25vw, 20px);
+        margin-right: 12px;
+    }
+    .summit_sub_text2{
+        font-weight: 400;
+        font-size: 32px;
     }
     .location{
         font-size: 4.1vw;
     }
-    .line_button{
+    .line_button,
+    .section_1_text,
+    .section_1_description {
         display: none;
+    }
+    
+
+    .section_1_2{
+        background-image: url(../images/sp/Group\ 186.png);
+        margin-top: -16px;
+    }
+    .sectiontitle{
+        padding-top: clamp(48px, 3.3vw, 50px);
+    }
+    .sp_section1_text{
+        display: block;
     }
 }
 @media (max-width: 430px){
