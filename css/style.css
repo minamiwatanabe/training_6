@@ -46,16 +46,18 @@
     color: #FFFFFF;
     font-weight: 700;
     font-style: italic;
-    
+    text-shadow: 0px 0.91px 3.18px #000C4D;
     font-size: clamp(24px, 2.91vw, 43.73px);
 }
 .sat{
+    text-shadow: 0px 0.91px 3.18px #000C4D;
     font-size: 0.8em;
 }
 .location{
     color: #FFFFFF;
     font-size:clamp(16px, 2.03vw, 29.19px);
     font-weight: bold;
+    text-shadow: 0px 0.91px 3.18px #000C4D;
     padding-bottom: clamp(24px, 2.91vw, 42px);
 }
 .line_button{
@@ -78,11 +80,16 @@
 .section_1_2{
     background-image: url(../images/Group\ 185.png);
     width: 100%;
-    aspect-ratio: 1440 / 1465;
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    margin-bottom: 45px;
 }
-.section_1{
+.section_1,
+.section_2,
+.section_3,
+.section_4,
+.section_5{
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
@@ -101,8 +108,7 @@
     font-size: clamp(14px, 1.25vw, 18px);
     color: #444545;
     font-weight: 700;
-    letter-spacing: 0%;
-    padding-bottom:clamp(30px, 4.17vw, 60px);  /* 60px */
+    padding-bottom:clamp(24px, 4.17vw, 60px);  /* 60px */
 }
 .sectionsub_title::before,
 .sectionsub_title::after {
@@ -111,9 +117,9 @@
   width: clamp(20px, 2.8vw, 30px);        /* 横棒の長さ */
   height: 1px;        /* 横棒の太さ */
   background-color: #444545;
-  vertical-align: 40%;
-  margin-right: clamp(14px, 1.39vw, 21px);
-  margin-left: clamp(8.33px, 0.69vw, 11px);
+  vertical-align: 32%;
+  margin-right: 1.39vw;
+  margin-left: 1.25vw;
 }
 .section_1_text{
     font-size: clamp(18px, 1.52vw, 22px);
@@ -130,10 +136,305 @@
     line-height: 45px;
     text-align: left;
     margin: 0 auto;
+    padding-bottom: 160px;
 }
 .sp_section1_text{
     display: none;
 }
+.section_2 h1.sectiontitle{
+    padding-top: 0;
+}
+.section_2 h2.sectionsub_title::before,
+.section_2 h2.sectionsub_title::after{
+    margin-right: 2.5vw;
+    margin-left: 2.1vw;
+}
+.info_block{
+    text-align: left;
+    width: clamp(600px, 66.67vw, 960px);
+    margin: 0 auto;
+}
+.info_item{
+    display: flex;
+    font-size:clamp(14px, 1.52vw, 22px) ;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 35px 0;
+    align-items: center;
+    border-bottom:  1px dashed #C4C4C4;
+}
+.info_item:nth-of-type(5){
+    border-bottom:  0;
+    margin-top: 5px;
+}
+.info_item:first-of-type{
+    padding-top: 0;
+}
+.info_label{
+    margin-right: 21px;
+    color: #FDD35C;
+    border: 2px solid #FDD35C;      /* 枠線 */
+    border-radius: 999px; 
+    padding: 6px 16px;
+    width: 138px;
+    text-align: center;
+}
+.info_item:nth-of-type(3) .info_label,
+.info_item:nth-of-type(5) .info_label {
+  align-self: flex-start;
+}
+
+.info_content{
+    line-height: 34px;
+}
+.sp_info_content{
+    display: none;
+}
+.info_item:nth-of-type(5) .info_content{
+    display: flex;
+}
+.access_title{
+    line-height: 41px;
+}
+.access{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 5px;
+    margin-right: 7px;
+}
+.access::before {
+    content: "●";
+    color:#FDD35C;     /* ポチとテキストの間の余白 */
+    font-size: 0.5em;
+}
+.access .line {
+    display: inline-block;
+    padding-left: 0.7em; /* ← インデント */
+}
+.map_container img {
+    max-width: 100%;
+    height: auto;
+}
+.sp_map_container{
+    display: none;
+}
+.section_3_contener{
+    background-color: #FFF6DE;
+    width: 100%;
+    height: auto;
+}
+.section_3 h1.sectiontitle{
+    padding-top: clamp(40px, 5.56vw, 80px);
+    color: #FDD35C;
+}
+.section_3_main{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.05vw;
+    margin: 0 10px;
+}
+.main_conteiner{
+    border: 3px solid #FDD35C;
+    border-radius: 10px;
+    overflow: hidden;
+    width: clamp(336px, 29.17vw, 420px);
+}
+.main_title{
+    background-color: #FDD35C;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: clamp(18px, 1.67vw, 24px);
+    line-height: clamp(40px, 3.33vw, 48px);
+}
+.main_box{
+    background-color: #FFFFFF;
+}
+.main_text1{
+    font-weight: 500;
+    font-size: clamp(10.5px, 0.97vw, 14px);
+    line-height: clamp(8px, 1.39vw, 20px);
+    padding-top: clamp(10px, 0.97vw, 14px);
+    margin-bottom: -5px;
+    margin-right: 12px;
+}
+.sec3_line{
+    width: clamp(180px, 16.11vw, 232px);
+}
+.main_text2{
+    font-weight: 700;
+    font-size: clamp(21px, 1.94vw, 28px);
+    color: #FDD35C;
+    line-height: 100%;
+    padding-bottom: clamp(15px, 1.39vw, 20px);
+}
+.quantity{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: clamp(37px, 3.33vw, 48px);
+    transform: scaleX(0.9); /* 横を90%に縮める */
+    display: inline-block; 
+}
+.sec3_img{
+    width: clamp(262px, 23.61vw, 340px);
+    padding: 0 40px 16px 40px;
+}
+.section_3 img.line_button{
+    padding-bottom: 5.56vw;
+}
+.section_4 h1.sectiontitle{
+    padding-top: clamp(40px, 3.47vw, 50px);
+    color: #FDD35C;
+}
+.section_4_contener {
+    position: relative;
+    z-index: 0; /* 疑似要素より前に出す */
+    padding-bottom: 32px;
+}
+.section_4_contener::before,
+.section_4_contener::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: clamp(10px, 3.47vw, 50px);
+    background-color: #FDD35C; /* ← ラインの色は自由に変更可能 */
+    z-index: -1; /* 背景に回す */
+}
+.section_4_contener::before {
+    left: 0;
+}
+.section_4_contener::after {
+    right: 0;
+}
+.section_4 h2.sectionsub_title{
+    padding-bottom: 36px; 
+}
+.company_box{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.94vw;
+    
+}
+.company_box:nth-of-type(3) {
+    padding-bottom: 1vw;
+}
+.sec4_img_box{
+    width:clamp(180px, 18.06vw, 280px);
+    display: grid;
+    place-items: center;
+    margin-right: 2.22vw;
+}
+.company1_img{
+    width: clamp(73.5px, 7.63vw, 110px);
+    aspect-ratio: 110 / 30;
+}
+.company2_img{
+    width: clamp(154px, 15.56vw, 224px);
+    aspect-ratio: 224 / 19;
+}
+.company3_img{
+    width: clamp(178px, 18.61vw, 268px);
+    aspect-ratio: 268 / 30;
+}
+.company4_img{
+    width: 124px;
+    aspect-ratio: 124 / 57;
+}
+.company5_img{
+    width: 6.94vw;
+    aspect-ratio: 103 / 42;
+    margin: 10px 0 0 24px;
+}
+.company_about_box {
+    text-align: left;
+}
+.oplan_link {
+    display: block;        /* ← ブロック要素にしておくと確実 */
+    margin: 0;             /* ← 中央揃え系の影響除去 */
+    color: #000000;
+    text-decoration: underline;
+    padding-left: 0.7em;
+}
+.company_about{
+    width: clamp(340px, 46.6vw, 670px);
+    font-weight: 500;
+    font-size: clamp(14px, 1.11vw, 16px);
+    line-height: 150%;
+}
+
+.link_box{
+    display: flex;
+    padding-top: 5px;
+    align-items: baseline;
+}
+.company4a_img{
+    width: clamp(77px, 6.53vw, 95px);
+    aspect-ratio: 95 / 21;
+}
+.colon{
+    padding: 0 10px;
+}
+.sucsak_link{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+.section_5_contener{
+    background-image: url(../images/Group\ 192.png);
+    width: 100%;
+    background-size: 100%;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    margin-bottom: 5.1vw;
+}
+.section_5 h1.sectiontitle{
+    padding-top: 1.67vw;
+}
+.section_5 h2.sectionsub_title::before,
+.section_5 h2.sectionsub_title::after{
+    margin-right: 3.89vw;
+    margin-left: 3.3vw;
+}
+.company_list {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-top: 2.22vw;
+    margin-bottom: 2vw;
+    gap: 145px;
+}
+
+.company_list .col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 220px;
+    text-align: left;
+    color: #444545;
+    font-weight: 500;
+    font-size: 1.39vw;
+    line-height: 160%;
+}
+
+
+.note{
+    color: #444545;
+    font-weight: 500;
+    font-size: 1.39vw;
+    text-align: right;
+}
+.box_container{
+    display: none;
+}
+@media (max-width: 1420px){
+   .company_list{
+        justify-content: center;
+   } 
+}
+  
 @media (max-width: 767px){
     .kv{
         background-image: url(../images/sp/Group\ 184.png);
@@ -153,40 +454,147 @@
     .summit_sub_logo{
         display: flex;
         justify-content: center; 
-        color: #FFFFFF;
-        font-family: "Roboto", sans-serif;
-        padding-bottom: clamp(11px, 0.97vw, 12px);
+        padding-bottom: 20px;
     }
     .summit_sub_text{
+        color: #FFFFFF;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-style: italic;
         font-size: clamp(18.9px, 1.25vw, 20px);
         margin-right: 12px;
     }
-    .summit_sub_text2{
-        font-weight: 400;
-        font-size: 32px;
-    }
-    .location{
-        font-size: 4.1vw;
-    }
-    .line_button,
-    .section_1_text,
-    .section_1_description {
-        display: none;
-    }
-    
-
     .section_1_2{
+        background-image: none;
+        margin-top: -6.15vw;
+    }
+    .section_1{
         background-image: url(../images/sp/Group\ 186.png);
-        margin-top: -16px;
+        width: 100%;
+        background-size: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
     }
     .sectiontitle{
-        padding-top: clamp(48px, 3.3vw, 50px);
+        padding-top: clamp(52px, 3.89vw, 56px);
     }
     .sp_section1_text{
         display: block;
+        width: 295px;
+        margin: 0 auto;
+        text-align: left;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 37px;
+        padding-bottom: 35px;
     }
+    .info_block{
+        width: 347px;
+    }
+    .info_item:nth-of-type(-n+4) .info_content,
+    .map_container{
+        display: none;
+    }
+    .sp_info_content,
+    .sp_map_container{
+        display: block;
+    }
+    .info_block{
+        margin-bottom: -5px;
+    }
+    .info_item{
+        line-height: 24px;
+        padding: 10px 0;
+    }
+    .info_item:nth-of-type(5) .info_label{
+        margin: 3px;
+    }
+    .info_label{
+        margin-right: 14px;
+        padding: 2px 0;
+        flex: 0 0 105px;
+        align-self: flex-start;
+    }
+    .sp_info_content{
+        white-space: nowrap; 
+    }
+    .access_title{
+        margin-bottom: -6px;
+    }
+    .access{
+        margin-right: 0;
+    }
+    .info_item:nth-of-type(5){
+        margin-top: 0;
+    }
+    .section_3 h2.sectionsub_title::before,
+    .section_3 h2.sectionsub_title::after,
+    .section_4 h2.sectionsub_title::before,
+    .section_4 h2.sectionsub_title::after{
+        margin-right: 32px;
+        margin-left: 30px;
+}
+    .section_3_main{
+        display: block;
+        justify-items: center;
+        padding-bottom: 24px;
+    }
+    .main_conteiner{
+        margin-bottom: 24px;
+    }
+    .main_text1{
+        margin-bottom: 0;
+    }
+    .company_box{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10vw;
+    }
+    .sec4_img_box{
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    .company_box:nth-of-type(4) .sec4_img_box{
+        padding: 0;
+    }
+    .company_about{
+        text-align: left;
+    }
+    .link_box{
+        justify-content: center;
+    }
+    .section_5_contener{
+        background-image: url(../images/sp/Group\ 193.png);
+        background-position: center 20px;
+    }
+    .section_5 h1.sectiontitle{
+        padding-top: 40px;
+    }
+    .box_container {
+        display: grid;
+        grid-template-columns: repeat(2, 129px); /* 2列、幅100pxずつ */
+        grid-auto-rows: 38px;                   /* 高さ100pxずつ */
+        gap: 22px;                                /* ボックス間の余白 */
+        justify-content: center;                 /* 中央寄せ */
+        margin: 5px 0;
+    }   
+    .box {
+        background-color: #D9D9D9;
+    }
+        
+
+    .line_button,
+    .section_1_text,
+    .section_1_description,
+    .oplan_link,
+    .company_box:nth-of-type(5),
+    .company_list,
+    .note {
+        display: none;
+    }
+
+
+
 }
 @media (max-width: 430px){
     .side_button_image{
