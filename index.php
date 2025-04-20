@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 <div class="sp_map_container">
-                    <img class="map_image"src="./images/sp/sp_map.png" alt="東京国際ホール">
+                    <img class="sp_map_image"src="./images/sp/sp_map.png" alt="東京国際ホール">
                 </div>
             </div>
         </div>
@@ -215,6 +215,185 @@
             </div>
         </div>
     </div>
+    <div class="section_6_contener">
+        <div class="section_6">
+            <h1 class="sectiontitle">Time Schedule</h1>
+            <h2 class="sectionsub_title">タイムスケジュール</h2>
+            <div class="profile_grid">
+                <div class="profile_card">
+                    <div class="time_tag">10:00～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_1.png" alt="DJ社長" class="profile_img">
+                        <p class="profile_name">DJ社長</p>
+                    </div> 
+                    <p class="profile_description">今、SNSを始めるなら</p>    
+                </div>
+                <div class="profile_card">
+                    <div class="time_tag">11:00～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_2.png" alt="田端信太郎" class="profile_img">
+                        <p class="profile_name">田端信太郎</p>
+                    </div> 
+                    <p class="profile_description">会社員で出世する人と独立して成功する人の適正について</p>    
+                </div> 
+                <div class="profile_card">
+                    <div class="time_tag">11:40～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_3.png" alt="宋世羅" class="profile_img">
+                        <p class="profile_name">宋世羅</p>
+                    </div> 
+                    <p class="profile_description">営業出身のフリーランスの生存戦略</p>    
+                </div>
+                <div class="profile_card">
+                    <div class="time_tag">12:20～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_4.png" alt="林尚弘" class="profile_img">
+                        <p class="profile_name">林尚弘</p>
+                    </div> 
+                    <p class="profile_description">無数のフリーランスに発注してわかった優秀な人の特徴</p>    
+                </div> 
+                <div class="profile_card">
+                    <div class="time_tag">13:00～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_5.png" alt="木下勝寿" class="profile_img">
+                        <p class="profile_name">木下勝寿</p>
+                    </div> 
+                    <p class="profile_description">現役上場企業社長が語る<br>最新WEBマーケティング論</p>    
+                </div>
+                <div class="profile_card">
+                    <div class="time_tag">13:40～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_6.png" alt="株本祐己" class="profile_img">
+                        <p class="profile_name">株本祐己</p>
+                    </div> 
+                    <p class="profile_description">月収300万円までのロードマップ</p>    
+                </div> 
+                <div class="profile_card">
+                    <div class="time_tag">14:20～&nbsp;&nbsp;</div>
+                    <div class="multiple_profile_wrap">
+                        <div class="multiple_profile_img_wrap">
+                            <img src="./images/sec6/sec6_7.png" alt="やまもとりゅうけん" class="multiple_profile_img">
+                            <img src="./images/sec6/sec6_8.png" alt="迫佑樹" class="multiple_profile_img">
+                            <img src="./images/sec6/sec6_9.png" alt="青笹寛史" class="multiple_profile_img">
+                        </div>
+                        <div class="multi_profile_name">
+                            <div class="name_left">
+                                <span class="line1">やまもと</span><br>
+                                <span class="line2">りゅうけん</span>
+                            </div>
+                            <div class="name_right">
+                                <span class="name_space">×</span>
+                                <span>迫佑樹</span>
+                                <span class="name_space">×</span>
+                                <span class="name_endspace">青笹寛史</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="profile_description">SNSを伸ばした先に見える世界</p>    
+                </div> 
+                <div class="profile_card">
+                    <div class="time_tag">15:00～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_10.png" alt="井上貴裕" class="profile_img">
+                        <p class="profile_name">井上貴裕</p>
+                    </div> 
+                    <p class="profile_description">元サイバーエージェント局長による広告業界の未来予想図</p>    
+                </div> 
+                <div class="profile_card">
+                    <div class="time_tag">15:40～&nbsp;&nbsp;</div>
+                    <div class="multiple_profile_wrap">
+                        <div class="multiple_profile_img_wrap">
+                            <img src="./images/sec6/sec6_11.png" alt="板橋晟星" class="two_profile_img">
+                            <img src="./images/sec6/sec6_12.png" alt="藍口康希" class="two_profile_img">
+                        </div>
+                        <div class="two_profile_name">
+                            <div class="name_right">
+                                <span class="name_endspace">板橋晟星</span>
+                                <span class="name_space">×</span>
+                                <span class="name_fstspace">藍口康希</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="profile_description">エンジニアとして独立し、年収3000万円を超える方法</p>    
+                </div>
+                <div class="profile_card">
+                    <div class="time_tag">16:20～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_13.png" alt="岩井良明" class="profile_img">
+                        <p class="profile_name">岩井良明</p>
+                    </div> 
+                    <p class="profile_description">累計300人以上、起業家を見て感じた成功法則</p>    
+                </div> 
+                <div class="profile_card">
+                    <div class="time_tag">17:00～&nbsp;&nbsp;</div>
+                    <div class="profile_img_wrap">
+                        <img src="./images/sec6/sec6_14.png" alt="島袋直樹" class="profile_img">
+                        <p class="profile_name">島袋直樹</p>
+                    </div> 
+                    <p class="profile_description">フリーランスにおすすめのM＆Aトレンドを紹介</p>    
+                </div>
+                <div class="profile_card">
+                    <div class="time_tag">MC&nbsp;&nbsp;</div>
+                    <div class="multiple_profile_wrap">
+                        <div class="multiple_profile_img_wrap">
+                            <img src="./images/sec6/sec6_15.png" alt="植本涼太郎" class="two_profile_img">
+                            <img src="./images/sec6/sec6_16.png" alt="兼頭竜矢" class="two_profile_img">
+                        </div>
+                        <div class="mc_profile_name">
+                            <div class="name_right">
+                                <span class="name_endspace">植本涼太郎</span>
+                                <span class="name_space">×</span>
+                                <span class="name_fstspace">兼頭竜矢</span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <button class="readmore_toggle">Read more</button>
+        </div>
+    </div>  
+    <div class="section_7_contener">
+        <div class="section_7">
+            <h1 class="sectiontitle">FAQ</h1>
+            <h2 class="sectionsub_title">よくある質問</h2>
+            <div class="sec7_main">
+                <div class="question_contener">
+                    <div class="sec7_text">
+                        <p class="question_logo">Q</p>
+                        <p class="question">再入場はできますか？</p>
+                    </div>
+                    <div class="sec7_text">
+                        <p class="answer_logo">A</p>
+                        <p class="answer">できます。</p>
+                    </div>
+                </div>
+                <div class="question_contener">
+                    <div class="sec7_text">
+                        <p class="question_logo">Q</p>
+                        <p class="question">入場にお金はかかりますか？</p>
+                    </div>
+                    <div class="sec7_text">
+                        <p class="answer_logo">A</p>
+                        <p class="answer">一切かかりません。</p>
+                    </div>
+                </div>
+                <div class="question_contener">
+                    <div class="sec7_text">
+                        <p class="question_logo">Q</p>
+                        <p class="question">出展を希望する企業はどこから問い合わせれば良いですか？
+                        </p>
+                    </div>
+                    <div class="sec7_text">
+                        <p class="answer_logo">A</p>
+                        <a class="answer" href="https://docs.google.com/forms/d/e/1FAIpQLSdphU7Vu9xdSpRV0xaVSt9C6MpHUYG3OsTh7Vuqj8sGyInYqA/viewform">
+                            こちらからお願いします。</a>
+                        <p class="answer"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <?php include('footer.php'); ?>

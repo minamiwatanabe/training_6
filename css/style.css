@@ -1,3 +1,6 @@
+body{
+    padding-bottom: 90vh;
+}
 *{
     margin: 0;
     padding: 0;
@@ -89,7 +92,9 @@
 .section_2,
 .section_3,
 .section_4,
-.section_5{
+.section_5,
+.section_6,
+.section_7{
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
@@ -406,7 +411,6 @@
     margin-bottom: 2vw;
     gap: 145px;
 }
-
 .company_list .col {
     display: flex;
     flex-direction: column;
@@ -418,8 +422,6 @@
     font-size: 1.39vw;
     line-height: 160%;
 }
-
-
 .note{
     color: #444545;
     font-weight: 500;
@@ -429,13 +431,361 @@
 .box_container{
     display: none;
 }
+
+.section_6_contener {
+    position: relative;
+    width: 100%;
+    padding-bottom: 184px;
+    background-image: url("../images/sec6/background_4.png");
+    background-size: cover;         /* 幅100%にフィット */
+    background-position: left top; /* 必要に応じて調整（元が top: -20px なら） */
+    background-repeat: no-repeat;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  
+.section_6 h1.sectiontitle{
+    padding-top: clamp(40px, 6.25vw, 90px);
+}
+.section_6 h2.sectionsub_title{
+    color: #FFFFFF;
+}
+.section_6 h2.sectionsub_title::before,
+.section_6 h2.sectionsub_title::after{
+    background-color: #FFFFFF;
+}
+/* グリッドレイアウト：横3×縦4（12個） */
+.profile_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6vw 2.22vw;
+    margin: 0 5px;
+}
+  
+  /* カード全体の枠 */
+.profile_card {
+    position: relative;
+    background-color: #F1FBFF99;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    height: 254px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.profile_card:nth-of-type(12) {
+    position: relative;
+    background-color: #F1FBFF99;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    height: 192px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.profile_img_wrap {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+.profile_img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin-top: 0.83vw;
+}
+
+.profile_name {
+    font-weight: 700;
+    color: #444545;
+    background-color: #ffffff;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    width: clamp(77px, 8.33vw, 120px);
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(14px, 1.11vw, 16px);
+    white-space: nowrap;
+    letter-spacing: 0.05rem;
+}
+.multiple_profile_wrap{
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+.multiple_profile_img_wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; /* gapはゼロにして重ねる */
+    margin-bottom: 16px;
+}
+.multiple_profile_img{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    margin-top: 42px;
+    margin-right: -10px;
+    margin-left: 0;
+}
+.two_profile_img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    margin: 32px 6px 0;
+}
+.multi_profile_name{
+    display: flex;
+    align-items: center; 
+    font-size: clamp(10px, 1.11vw, 16px);
+    justify-content: center;
+    flex-wrap: wrap; /* レスポンシブ時の安全対策 */
+    font-weight: 700;
+    color: #444545;
+    background-color: #ffffff;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    width: clamp(182px, 18.89vw, 272px);
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.two_profile_name{
+    width: clamp(158px, 16.67vw, 240px);
+    font-size: clamp(14px, 1.11vw, 16px);
+    flex-wrap: wrap; /* レスポンシブ時の安全対策 */
+    font-weight: 700;
+    color: #444545;
+    background-color: #ffffff;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mc_profile_name{
+    width: clamp(175px, 16.67vw, 240px);
+    font-size: clamp(14px, 1.11vw, 16px);
+    flex-wrap: wrap; /* レスポンシブ時の安全対策 */
+    font-weight: 700;
+    color: #444545;
+    background-color: #ffffff;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.name_left{
+    font-size: clamp(8px, 0.83vw, 12px);
+    padding-left: clamp(0, 0.69vw, 10px);
+    line-height: 1.1;
+}
+.name_left .line1{
+    text-align: center;
+}
+.name_right {
+    line-height: 1.1;
+    white-space: nowrap;
+    padding: 2px 0; 
+}
+.name_space{
+    padding: 0 clamp(6px, 0.56vw,8px);
+}
+.name_endspace{
+    padding-right: clamp(0, 0.69vw, 10px);
+}
+.name_fstspace{
+    padding-left: 0.69vw;
+}
+  /* 説明文 */
+.profile_description {
+    font-size: clamp(16px, 1.39vw, 20px);
+    color: #444545;
+    font-weight: 700;
+    text-align: left;
+    margin: 36px 14px 0;
+    letter-spacing: 0.1rem;
+    line-height: 125%;
+}
+.profile_card:nth-of-type(2) .profile_description,
+.profile_card:nth-of-type(4) .profile_description,
+.profile_card:nth-of-type(7) .profile_description,
+.profile_card:nth-of-type(8) .profile_description,
+.profile_card:nth-of-type(9) .profile_description{
+    margin-top: 13px;
+}
+.profile_card:nth-of-type(3) .profile_description,
+.profile_card:nth-of-type(5) .profile_description,
+.profile_card:nth-of-type(6) .profile_description,
+.profile_card:nth-of-type(10) .profile_description,
+.profile_card:nth-of-type(11) .profile_description{
+    margin-top: 25px;
+}
+.profile_card:nth-of-type(9) .profile_description{
+    margin-right: 10px;
+}
+  /* 斜め左上に時間タグ */
+.time_tag {
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    background-image: url(../images/sec6/Group\ 219.png);
+    background-size: contain;
+    background-repeat: no-repeat;        /* 画像をタグ全体にフィットさせる */
+    background-position: center; 
+    text-align: center;
+    color: #444545;
+    font-size: clamp(14px, 1.11vw, 16px);
+    font-weight: 700;
+    width: clamp(83px, 6vw, 88px);
+    padding: 0 0 4px 8px;
+    letter-spacing: 0.05rem;
+}
+.readmore_toggle{
+    display: none;
+}
+
+.section_7_contener {
+    background-image: 
+        url('../images/Polygon 6.png'), 
+        url('../images/Polygon 5.png'), 
+        url('../images/Polygon 5.png');
+    background-repeat: no-repeat;
+    background-position: 
+        90% 2.65%, 
+        99% 25%, 
+        -25px 58%;
+    background-size: 
+        200px, 
+        65px, 
+        135px;
+    width: 100%;
+}
+.section_7 h1.sectiontitle{
+    padding-top: clamp(28px, 6.94vw, 100px);
+    color: #FDD35C;
+}
+.sec7_main{
+    width: clamp(308px, 52.7vw, 760px);
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.question_contener{
+    margin-bottom: clamp(31px, 3.33vw, 48px);
+}
+.sec7_text{
+    display: flex;
+    gap: 10px;
+    margin-bottom: clamp(13px, 1.11vw, 16px); 
+}
+.question_logo,
+.answer_logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: clamp(16px, 1.25vw, 18px);
+    line-height: 33px; 
+    color: #FFFFFF;                /* 文字色 */
+    background-color: #00A8F0;     /* 背景色 */
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;           /* 丸くする */
+    text-align: center;
+    display: inline-block;        /* 中央揃えに必要 */
+    flex-shrink: 0;  
+}
+.question_logo {
+    background-color: #00A8F0; 
+}
+  
+.answer_logo {
+    background-color: #FDD35C; 
+}
+  
+  
+.question,
+.answer{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: clamp(16px, 1.25vw, 18px);
+    line-height: 150%;
+    color: #000000; /* テキスト色調整可 */
+    width: auto;
+}
+.sec7_text a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.site_footer{
+    background-color: #333333;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.footer_contener{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer_top {
+    height: 159px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF; /* 区切りライン */
+}
+.footer_contact_btn{
+    text-decoration: none;
+    color: #FFFFFF;
+    border:1.63px solid #FFFFFF;
+    padding: 10px 44px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 999px;
+    font-size: clamp(16px, 1.4vw, 22px);
+    letter-spacing: 0.1rem;
+}
+.footer_bottom {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+  
+.footer_logo {
+    width: clamp(120px, 15vw, 220px);
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+  
+.footer_text {
+    font-size: clamp(9px, 0.97vw, 14px);
+    color: #FFFFFF;
+}
+  
 @media (max-width: 1420px){
    .company_list{
         justify-content: center;
    } 
 }
-  
+@media (max-width: 900px){
+    .multiple_profile_img{
+        width: 75px;
+        height: 75px;
+    }
+
+}
 @media (max-width: 767px){
+    body{
+        padding-bottom: 120px;
+    }
     .kv{
         background-image: url(../images/sp/Group\ 184.png);
         width: 100%;
@@ -533,7 +883,17 @@
     .section_4 h2.sectionsub_title::after{
         margin-right: 32px;
         margin-left: 30px;
-}
+    }
+    .section_6 h2.sectionsub_title::before,
+    .section_6 h2.sectionsub_title::after{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .section_7 h2.sectionsub_title::before,
+    .section_7 h2.sectionsub_title::after{
+        margin-right: 32px;
+        margin-left: 30px;
+    }
     .section_3_main{
         display: block;
         justify-items: center;
@@ -566,6 +926,7 @@
     .section_5_contener{
         background-image: url(../images/sp/Group\ 193.png);
         background-position: center 20px;
+        margin-bottom: 44px;
     }
     .section_5 h1.sectiontitle{
         padding-top: 40px;
@@ -581,7 +942,193 @@
     .box {
         background-color: #D9D9D9;
     }
+
+    .section_6_contener{
+        padding-bottom: 54px;
+    }
+
+    .profile_grid {
+        justify-items: center;
+        grid-template-columns: 1fr;   /* ← 横1列 */
+        gap: 10px 0;
+        margin: 5px 20px;                 /* ← 縦方向だけに間隔をあける */
+    }
+    .profile_card{
+        display: flex;
+        flex-direction: row;
+        width: 354px;
+        height: 103px;
+        justify-content: space-around;
+        position: relative;
+    } 
+    .profile_description {
+        order: 1;
+        width: 230px;
+        margin-left: 5px;
+        margin-top: 52px;
+        letter-spacing: 0.09rem;
+        line-height: 110%;
+    }
+    .profile_img_wrap,
+    .multiple_profile_wrap {
+        order: 2;
+        margin-right: 10px;
+    }
+    .profile_img{
+        width: 80px;
+        height: 80px;
+        margin: 5px 5px 0 0;
+    }
+    .profile_name{
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        padding: 0 4px;
+    }
+    .time_tag{
+        left: -7px;
+        padding: 2px 0 8px 8px;
         
+    }
+    .profile_card:nth-of-type(12) .time_tag{
+        text-align: center;
+     }
+    .profile_card:nth-of-type(2) .profile_description{
+        margin-top: 43px;
+    }
+    .profile_card:nth-of-type(4) .profile_description,
+    .profile_card:nth-of-type(5) .profile_description,
+    .profile_card:nth-of-type(8) .profile_description{
+        margin-top: 48px;
+    }
+    .profile_card:nth-of-type(3) .profile_description,
+    .profile_card:nth-of-type(6) .profile_description{
+        margin-top: 48px;
+        width: 220px;
+    }
+    .profile_card:nth-of-type(7) .profile_description{
+        margin-top: 48px;
+        width: 135px;
+    }
+    .profile_card:nth-of-type(9) .profile_description{
+        margin: 36px 0 0 10px;
+        width: 170px;
+    }
+    .profile_card:nth-of-type(10) .profile_description,
+    .profile_card:nth-of-type(11) .profile_description{
+        margin-top: 43px;
+        width: 220px;
+    }
+    .profile_card:nth-of-type(7) .multiple_profile_img_wrap{
+        margin-right: 10px;
+    }
+    .profile_card:nth-of-type(9) .multiple_profile_img_wrap{
+       gap: 8px;
+    }
+    .profile_card:nth-of-type(12){
+        width: 354px;
+        height: 103px;
+    }
+    .profile_card:nth-of-type(12) .multiple_profile_img_wrap{
+        gap: 8px;
+     }
+    .multiple_profile_img{
+        width: 66px;
+        height: 66px;
+        margin-top: 18px;
+    }
+    .multi_profile_name{
+        bottom: 12px;
+    }
+    .two_profile_img{
+        width: 72px;
+        height: 72px;
+        margin: 12px 0 0;
+    }
+    .two_profile_name{
+        bottom: 8px;
+    }
+    .mc_profile_name{
+        bottom: 10px;
+    }
+    .profile_grid .profile_card:nth-child(n+4) {
+        display: none;
+    }
+      
+    .profile_grid.open .profile_card {
+        display: flex; /* 全部表示 */
+    }
+    .profile_card:nth-child(3)::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+        pointer-events: none;
+        z-index: 1;
+    }
+      
+      /* open状態のときは非表示に */
+    .profile_grid.open .profile_card:nth-child(3)::after {
+        display: none;
+    }
+      
+    .readmore_toggle {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 1;
+        text-align: center;
+        
+        color: #FFFFFF;   
+        background-color: transparent;           /* 文字色（必要なら変更OK） */
+        border: 1px solid #FFFFFF;   /* 必要な場合：囲む線 */
+        padding: 4px 14px;
+        margin-top: 5px;
+        cursor: pointer;
+        
+        border-radius: 0px;         /* 四角く */
+        display: inline-block;
+    }
+    .section_7_contener {
+        background-image: none;
+    }
+    .sec7_main{
+        padding-bottom: 90px;
+    }
+    .question_contener:nth-of-type(3){
+        display: none;
+    }
+    .question_logo,
+    .answer_logo {
+        width: 26px;
+        height: 26px;
+        line-height: 26px; 
+    }
+    .footer_top{
+        height: 86px;
+    }
+    .footer_contact_btn{
+        padding: 6px 44px;
+        margin-top: 0;
+        letter-spacing: 0;
+    }
+    .footer_bottom{
+        height: 72px;
+        gap: 0;
+    }
+    .footer_logo{
+        margin-right: 10px;
+    }
+    .footer_text{
+        margin: 0 4px 5px
+    }
+
+        
+
+
 
     .line_button,
     .section_1_text,
@@ -589,7 +1136,7 @@
     .oplan_link,
     .company_box:nth-of-type(5),
     .company_list,
-    .note {
+    .note{
         display: none;
     }
 
@@ -609,5 +1156,22 @@
         width: 100vw;     /* サイズはお好みで */
         height: auto;
         z-index: 1000;
+    }
+}
+
+@media (max-width: 380px){
+    .sp_map_image{
+        width: 80vw;
+        margin: 0 30px;
+    }
+    .company_about{
+        width: 90vw;
+    }
+    .profile_grid{
+        justify-items: start;
+    }
+    .profile_card,
+    .profile_card:nth-of-type(12){
+        width: 90vw;
     }
 }
