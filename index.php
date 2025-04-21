@@ -203,16 +203,6 @@
                 </div>
             </div>
             <p class="note">（順不同、一部企業のみ掲載）</p>
-            <div class="box_container">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
         </div>
     </div>
     <div class="section_6_contener">
@@ -242,7 +232,7 @@
                         <img src="./images/sec6/sec6_3.png" alt="宋世羅" class="profile_img">
                         <p class="profile_name">宋世羅</p>
                     </div> 
-                    <p class="profile_description">営業出身のフリーランスの生存戦略</p>    
+                    <p class="profile_description">営業出身のフリーランスの<br>生存戦略</p>    
                 </div>
                 <div class="profile_card">
                     <div class="time_tag">12:20～&nbsp;&nbsp;</div>
@@ -258,7 +248,7 @@
                         <img src="./images/sec6/sec6_5.png" alt="木下勝寿" class="profile_img">
                         <p class="profile_name">木下勝寿</p>
                     </div> 
-                    <p class="profile_description">現役上場企業社長が語る<br>最新WEBマーケティング論</p>    
+                    <p class="profile_description">現役上場企業社長が語る<span class="br_pc"><br></span><span class="br_sp">最新<br></span>WEBマーケティング論</p>
                 </div>
                 <div class="profile_card">
                     <div class="time_tag">13:40～&nbsp;&nbsp;</div>
@@ -266,7 +256,7 @@
                         <img src="./images/sec6/sec6_6.png" alt="株本祐己" class="profile_img">
                         <p class="profile_name">株本祐己</p>
                     </div> 
-                    <p class="profile_description">月収300万円までのロードマップ</p>    
+                    <p class="profile_description">月収300万円までのロード<br>マップ</p>    
                 </div> 
                 <div class="profile_card">
                     <div class="time_tag">14:20～&nbsp;&nbsp;</div>
@@ -314,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="profile_description">エンジニアとして独立し、年収3000万円を超える方法</p>    
+                    <p class="profile_description">エンジニアとして独<span class="br_sp"><br></span>立し、年収3000万円<span class="br_sp2"><br></span>を超える方法</p>
                 </div>
                 <div class="profile_card">
                     <div class="time_tag">16:20～&nbsp;&nbsp;</div>
@@ -322,7 +312,7 @@
                         <img src="./images/sec6/sec6_13.png" alt="岩井良明" class="profile_img">
                         <p class="profile_name">岩井良明</p>
                     </div> 
-                    <p class="profile_description">累計300人以上、起業家を見て感じた成功法則</p>    
+                    <p class="profile_description">累計300人以上、起業家を<br>見て感じた成功法則</p>    
                 </div> 
                 <div class="profile_card">
                     <div class="time_tag">17:00～&nbsp;&nbsp;</div>
@@ -330,7 +320,7 @@
                         <img src="./images/sec6/sec6_14.png" alt="島袋直樹" class="profile_img">
                         <p class="profile_name">島袋直樹</p>
                     </div> 
-                    <p class="profile_description">フリーランスにおすすめのM＆Aトレンドを紹介</p>    
+                    <p class="profile_description">フリーランスにおすすめの<br>M＆Aトレンドを紹介</p>    
                 </div>
                 <div class="profile_card">
                     <div class="time_tag">MC&nbsp;&nbsp;</div>

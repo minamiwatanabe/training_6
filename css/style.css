@@ -436,9 +436,6 @@
     font-size: 1.39vw;
     text-align: right;
 }
-.box_container{
-    display: none;
-}
 
 .section_6_contener {
     position: relative;
@@ -640,6 +637,24 @@
 .profile_card:nth-of-type(9) .profile_description{
     margin-right: 10px;
 }
+.br_pc {
+    display: inline;
+  }
+  .br_sp,
+  .br_sp2{
+    display: none;
+  }
+  
+  @media (max-width: 767px) {
+    .br_pc {
+      display: none;
+    }
+    .br_sp,
+    .br_sp2 {
+      display: inline;
+    }
+  }
+  
   /* 斜め左上に時間タグ */
 .time_tag {
     position: absolute;
@@ -692,7 +707,8 @@
 .sec7_text{
     display: flex;
     gap: 10px;
-    margin-bottom: clamp(13px, 1.11vw, 16px); 
+    margin-bottom: clamp(13px, 1.11vw, 16px);
+    text-align: left; 
 }
 .question_logo,
 .answer_logo {
@@ -791,9 +807,6 @@
 
 }
 @media (max-width: 767px){
-    body{
-        padding-bottom: 120px;
-    }
     .kv{
         background-image: url(../images/sp/Group\ 184.png);
         width: 100%;
@@ -934,21 +947,18 @@
     .section_5_contener{
         background-image: url(../images/sp/Group\ 193.png);
         background-position: center 20px;
-        margin-bottom: 44px;
+        margin-bottom: 36px;
     }
     .section_5 h1.sectiontitle{
         padding-top: 40px;
     }
-    .box_container {
-        display: grid;
-        grid-template-columns: repeat(2, 129px); /* 2列、幅100pxずつ */
-        grid-auto-rows: 38px;                   /* 高さ100pxずつ */
-        gap: 22px;                                /* ボックス間の余白 */
-        justify-content: center;                 /* 中央寄せ */
-        margin: 5px 0;
-    }   
-    .box {
-        background-color: #D9D9D9;
+    .company_list{
+        gap: 22px;
+    }
+    .company_list .col{
+        font-size: 10px;
+        max-width: 130px;
+        min-width: 0;
     }
 
     .section_6_contener{
@@ -1010,20 +1020,17 @@
     .profile_card:nth-of-type(3) .profile_description,
     .profile_card:nth-of-type(6) .profile_description{
         margin-top: 48px;
-        width: 220px;
     }
     .profile_card:nth-of-type(7) .profile_description{
         margin-top: 48px;
         width: 135px;
     }
     .profile_card:nth-of-type(9) .profile_description{
-        margin: 36px 0 0 10px;
-        width: 170px;
+        margin: 36px 0 0 5px;
     }
     .profile_card:nth-of-type(10) .profile_description,
     .profile_card:nth-of-type(11) .profile_description{
         margin-top: 43px;
-        width: 220px;
     }
     .profile_card:nth-of-type(7) .multiple_profile_img_wrap{
         margin-right: 10px;
@@ -1106,9 +1113,6 @@
     .sec7_main{
         padding-bottom: 90px;
     }
-    .question_contener:nth-of-type(3){
-        display: none;
-    }
     .question_logo,
     .answer_logo {
         width: 26px;
@@ -1143,7 +1147,6 @@
     .section_1_description,
     .oplan_link,
     .company_box:nth-of-type(5),
-    .company_list,
     .note{
         display: none;
     }
