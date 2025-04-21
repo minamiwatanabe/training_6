@@ -232,18 +232,25 @@
     padding-top: clamp(40px, 5.56vw, 80px);
     color: #FDD35C;
 }
-.section_3_main{
+.section_3_main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* ← 小さい画面で折り返すために */
+    gap: 20px;
     padding-bottom: 3.05vw;
     margin: 0 10px;
 }
-.main_conteiner{
+.main_conteiner {
     border: 3px solid #FDD35C;
     border-radius: 10px;
     overflow: hidden;
-    width: 100%;
     max-width: 420px;
+    width: clamp(336px, 29.17vw, 420px); /* 横幅レスポンシブ */
+    flex: 1 1 clamp(336px, 29.17vw, 420px); /* ← ここで伸縮自在に！ */
+}
+.main_conteiner {
+    display: flex;
+    flex-direction: column;
 }
 .main_title{
     background-color: #FDD35C;
@@ -254,6 +261,7 @@
 }
 .main_box{
     background-color: #FFFFFF;
+    flex-grow: 1;
 }
 .main_text1{
     font-weight: 500;
