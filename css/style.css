@@ -6,7 +6,6 @@
 .kv{
     background-image: url(../images/Group\ 183.png);
     width: 100%;
-    aspect-ratio: 1440 / 842;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -14,12 +13,12 @@
 .kv_container{
     max-width: 1440px;
     margin: 0 auto;
+    position: relative;
 }
 .stocksun_logo{
     position: absolute;
     top: 1.715%;
     left: 2.82%;
-    width: 12.96vw;
     height: 5.77%;
 }
 .kv_center{
@@ -35,7 +34,6 @@
     padding-bottom: clamp(26px, 3.03vw, 43.71px);
 }
 .summit_logo{
-    width: 39.03vw;
     padding-bottom: clamp(11px, 0.97vw, 12px);
 }
 .summit_sub_logo{
@@ -63,7 +61,7 @@
     padding-bottom: clamp(24px, 2.91vw, 42px);
 }
 .line_button{
-    width: 29.17vw;
+    margin-bottom: 95px;
     cursor: pointer;
 }
 .side_button_image{
@@ -122,8 +120,8 @@
   height: 1px;        /* 横棒の太さ */
   background-color: #444545;
   vertical-align: 32%;
-  margin-right: 1.39vw;
-  margin-left: 1.25vw;
+  margin-right: 20px;
+  margin-left: 18px;
 }
 .section_1_text{
     font-size: clamp(18px, 1.52vw, 22px);
@@ -150,8 +148,8 @@
 }
 .section_2 h2.sectionsub_title::before,
 .section_2 h2.sectionsub_title::after{
-    margin-right: 2.5vw;
-    margin-left: 2.1vw;
+    margin-right: 36px;
+    margin-left: 30px;
 }
 .info_block{
     text-align: left;
@@ -237,7 +235,7 @@
     justify-content: space-between;
     flex-wrap: wrap; /* ← 小さい画面で折り返すために */
     gap: 20px;
-    padding-bottom: 3.05vw;
+    padding-bottom: 60px;
     margin: 0 10px;
 }
 .main_conteiner {
@@ -294,7 +292,7 @@
     padding: 0 40px 16px 40px;
 }
 .section_3 img.line_button{
-    padding-bottom: 5.56vw;
+    margin-bottom: 65px;
 }
 .section_4 h1.sectiontitle{
     padding-top: clamp(40px, 3.47vw, 50px);
@@ -327,17 +325,17 @@
 .company_box{
     display: flex;
     justify-content: center;
-    padding-bottom: 1.94vw;
+    padding-bottom: 28px;
     
 }
 .company_box:nth-of-type(3) {
-    padding-bottom: 1vw;
+    padding-bottom: 15px;
 }
 .sec4_img_box{
     width:clamp(180px, 18.06vw, 280px);
     display: grid;
     place-items: center;
-    margin-right: 2.22vw;
+    margin-right: 32px;
 }
 .company1_img{
     width: clamp(73.5px, 7.63vw, 110px);
@@ -356,7 +354,7 @@
     aspect-ratio: 124 / 57;
 }
 .company5_img{
-    width: 6.94vw;
+    width: 100px;
     aspect-ratio: 103 / 42;
     margin: 10px 0 0 24px;
 }
@@ -400,23 +398,23 @@
     background-size: 100%;
     background-position: center -20px;
     background-repeat: no-repeat;
-    margin-bottom: 5.1vw;
+    margin-bottom: 70px;
 }
 .section_5 h1.sectiontitle{
     padding-top: 1.67vw;
 }
 .section_5 h2.sectionsub_title::before,
 .section_5 h2.sectionsub_title::after{
-    margin-right: 3.89vw;
-    margin-left: 3.3vw;
+    margin-right: 56px;
+    margin-left: 48px;
 }
 .company_list {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
     text-align: left;
-    padding-top: 2.22vw;
-    margin-bottom: 2vw;
+    padding-top: 32px;
+    margin-bottom: 30px;
     gap: 145px;
 }
 .company_list .col {
@@ -427,13 +425,13 @@
     text-align: left;
     color: #444545;
     font-weight: 500;
-    font-size: 1.39vw;
+    font-size: 20px;
     line-height: 160%;
 }
 .note{
     color: #444545;
     font-weight: 500;
-    font-size: 1.39vw;
+    font-size: 20px;
     text-align: right;
 }
 
@@ -464,7 +462,7 @@
 .profile_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6vw 2.22vw;
+    gap: 23px 32px;
     margin: 0 5px;
 }
   
@@ -498,7 +496,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #ffffff;
-    margin-top: 0.83vw;
+    margin-top: 12px;
 }
 
 .profile_name {
@@ -563,7 +561,7 @@
     transform: translateX(-50%);
 }
 .two_profile_name{
-    width: clamp(158px, 16.67vw, 240px);
+    width: clamp(165px, 16.67vw, 240px);
     font-size: clamp(14px, 1.11vw, 16px);
     flex-wrap: wrap; /* レスポンシブ時の安全対策 */
     font-weight: 700;
@@ -576,7 +574,7 @@
     transform: translateX(-50%);
 }
 .mc_profile_name{
-    width: clamp(175px, 16.67vw, 240px);
+    width: clamp(180px, 16.67vw, 240px);
     font-size: clamp(14px, 1.11vw, 16px);
     flex-wrap: wrap; /* レスポンシブ時の安全対策 */
     font-weight: 700;
@@ -608,7 +606,7 @@
     padding-right: clamp(0, 0.69vw, 10px);
 }
 .name_fstspace{
-    padding-left: 0.69vw;
+    padding-left: 10px;
 }
   /* 説明文 */
 .profile_description {

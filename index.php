@@ -248,7 +248,7 @@
                         <img src="./images/sec6/sec6_5.png" alt="木下勝寿" class="profile_img">
                         <p class="profile_name">木下勝寿</p>
                     </div> 
-                    <p class="profile_description">現役上場企業社長が語る<span class="br_pc"><br></span><span class="br_sp">最新<br></span>WEBマーケティング論</p>
+                    <p class="profile_description">現役上場企業社長が語る<span class="br_pc"><br></span>最新<span class="br_sp"><br></span>WEBマーケティング論</p>
                 </div>
                 <div class="profile_card">
                     <div class="time_tag">13:40～&nbsp;&nbsp;</div>
