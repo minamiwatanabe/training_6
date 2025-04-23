@@ -1183,6 +1183,13 @@
     .profile_card:nth-of-type(12){
         width: 90vw;
     }
+    .profile_card:nth-of-type(4) .profile_description,
+    .profile_card:nth-of-type(5) .profile_description,
+    .profile_card:nth-of-type(7) .profile_description,
+    .profile_card:nth-of-type(8) .profile_description,
+    .profile_card:nth-of-type(9) .profile_description{
+        font-size: 14px;
+    }
 }
 @media (min-width: 1550px){
     .company_list .col{
